@@ -9,7 +9,7 @@ from airflow.providers.standard.operators.python import PythonOperator
 DATA_PATH = "/opt/airflow/dags/data"
 
 with DAG(
-    dag_id="orders_original",
+    dag_id="orders_sql",
     start_date=DateTime(2026, 10, 23),
     schedule=None
 ):
